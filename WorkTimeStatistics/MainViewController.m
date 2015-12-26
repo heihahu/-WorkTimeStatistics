@@ -1,22 +1,27 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  WorkTimeStatistics
 //
 //  Created by ZhaoJohn on 15/12/26.
 //  Copyright © 2015年 JohnZhao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

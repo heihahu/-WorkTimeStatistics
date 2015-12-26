@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F9A98F51C2E8EB2002EEC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A98F41C2E8EB2002EEC7C /* main.m */; };
 		2F9A98F81C2E8EB2002EEC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A98F71C2E8EB2002EEC7C /* AppDelegate.m */; };
-		2F9A98FB1C2E8EB2002EEC7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A98FA1C2E8EB2002EEC7C /* ViewController.m */; };
+		2F9A98FB1C2E8EB2002EEC7C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A98FA1C2E8EB2002EEC7C /* MainViewController.m */; };
 		2F9A98FE1C2E8EB2002EEC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A98FC1C2E8EB2002EEC7C /* Main.storyboard */; };
 		2F9A99011C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A98FF1C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodeld */; };
 		2F9A99031C2E8EB2002EEC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A99021C2E8EB2002EEC7C /* Assets.xcassets */; };
@@ -40,8 +40,8 @@
 		2F9A98F41C2E8EB2002EEC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F9A98F61C2E8EB2002EEC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F9A98F71C2E8EB2002EEC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2F9A98F91C2E8EB2002EEC7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2F9A98FA1C2E8EB2002EEC7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F9A98F91C2E8EB2002EEC7C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2F9A98FA1C2E8EB2002EEC7C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2F9A98FD1C2E8EB2002EEC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F9A99001C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkTimeStatistics.xcdatamodel; sourceTree = "<group>"; };
 		2F9A99021C2E8EB2002EEC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,13 +105,9 @@
 			children = (
 				2F9A98F61C2E8EB2002EEC7C /* AppDelegate.h */,
 				2F9A98F71C2E8EB2002EEC7C /* AppDelegate.m */,
-				2F9A98F91C2E8EB2002EEC7C /* ViewController.h */,
-				2F9A98FA1C2E8EB2002EEC7C /* ViewController.m */,
+				2F9A98F91C2E8EB2002EEC7C /* MainViewController.h */,
+				2F9A98FA1C2E8EB2002EEC7C /* MainViewController.m */,
 				2F9A98FC1C2E8EB2002EEC7C /* Main.storyboard */,
-				2F9A99021C2E8EB2002EEC7C /* Assets.xcassets */,
-				2F9A99041C2E8EB2002EEC7C /* LaunchScreen.storyboard */,
-				2F9A99071C2E8EB2002EEC7C /* Info.plist */,
-				2F9A98FF1C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodeld */,
 				2F9A98F31C2E8EB2002EEC7C /* Supporting Files */,
 			);
 			path = WorkTimeStatistics;
@@ -120,6 +116,10 @@
 		2F9A98F31C2E8EB2002EEC7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F9A99021C2E8EB2002EEC7C /* Assets.xcassets */,
+				2F9A99041C2E8EB2002EEC7C /* LaunchScreen.storyboard */,
+				2F9A99071C2E8EB2002EEC7C /* Info.plist */,
+				2F9A98FF1C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodeld */,
 				2F9A98F41C2E8EB2002EEC7C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -210,6 +210,7 @@
 				TargetAttributes = {
 					2F9A98EF1C2E8EB2002EEC7C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VFB3GE528P;
 					};
 					2F9A990B1C2E8EB2002EEC7C = {
 						CreatedOnToolsVersion = 7.2;
@@ -274,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9A99011C2E8EB2002EEC7C /* WorkTimeStatistics.xcdatamodeld in Sources */,
-				2F9A98FB1C2E8EB2002EEC7C /* ViewController.m in Sources */,
+				2F9A98FB1C2E8EB2002EEC7C /* MainViewController.m in Sources */,
 				2F9A98F81C2E8EB2002EEC7C /* AppDelegate.m in Sources */,
 				2F9A98F51C2E8EB2002EEC7C /* main.m in Sources */,
 			);
@@ -417,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorkTimeStatistics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnZhao.WorkTimeStatistics;
@@ -428,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorkTimeStatistics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnZhao.WorkTimeStatistics;

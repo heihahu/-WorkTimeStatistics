@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  WorkTimeStatistics
 //
 //  Created by ZhaoJohn on 15/12/26.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
 
 @end
